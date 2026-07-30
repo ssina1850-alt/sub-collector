@@ -7,6 +7,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 
 def fetch_and_decode(url):
+    """دریافت و دکود کردن محتوای لینک ساب"""
     try:
         req = urllib.request.Request(
             url,
@@ -25,6 +26,7 @@ def fetch_and_decode(url):
 
 
 def parse_vless_to_outbound(vless_url, tag_name):
+    """تبدیل لینک vless:// به آبجکت outbound در Xray"""
     try:
         parsed = urlparse(vless_url)
         if parsed.scheme != 'vless':
@@ -60,6 +62,7 @@ def parse_vless_to_outbound(vless_url, tag_name):
             'tag': tag_name,
         }
 
+        # تنظیمات Stream
         if network == 'ws':
             ws_settings = {'headers': {}}
             if host:
@@ -68,6 +71,7 @@ def parse_vless_to_outbound(vless_url, tag_name):
                 ws_settings['path'] = path
             outbound['streamSettings']['wsSettings'] = ws_settings
 
+        # تنظیمات TLS
         if security == 'tls':
             outbound['streamSettings']['security'] = 'tls'
             tls_settings = {'allowInsecure': False, 'show': False}
@@ -81,20 +85,57 @@ def parse_vless_to_outbound(vless_url, tag_name):
 
         return outbound
     except Exception as e:
+        print(f'Error parsing link {vless_url}: {e}')
         return None
 
 
-def generate_full_json_config(outbound_proxies, remark_name):
-    """تولید یک کانفیگ کامل JSON"""
+def generate_full_json_config(outbound_proxies):
+    """تولید ساختار کامل JSON نهایی"""
     base_config = {
         'dns': {
             'hosts': {
                 'domain:googleapis.cn': 'googleapis.com',
-                'dns.alidns.com': ['223.5.5.5', '223.6.6.6'],
-                'one.one.one.one': ['1.1.1.1', '1.0.0.1'],
-                'dns.google': ['8.8.8.8', '8.8.4.4'],
+                'dns.alidns.com': [
+                    '223.5.5.5',
+                    '223.6.6.6',
+                    '2400:3200::1',
+                    '2400:3200:baba::1',
+                ],
+                'one.one.one.one': [
+                    '1.1.1.1',
+                    '1.0.0.1',
+                    '2606:4700:4700::1111',
+                    '2606:4700:4700::1001',
+                ],
+                'dns.cloudflare.com': [
+                    '104.16.132.229',
+                    '104.16.133.229',
+                    '2606:4700::6810:84e5',
+                    '2606:4700::6810:85e5',
+                ],
+                'dns.google': [
+                    '8.8.8.8',
+                    '8.8.4.4',
+                    '2001:4860:4860::8888',
+                    '2001:4860:4860::8844',
+                ],
             },
-            'servers': ['1.1.1.1'],
+            'servers': [
+                '1.1.1.1',
+                {'address': '1.1.1.1', 'domains': ['geosite:google']},
+                {
+                    'address': '223.5.5.5',
+                    'domains': [
+                        'domain:alidns.com',
+                        'domain:doh.pub',
+                        'domain:dot.pub',
+                        'geosite:cn',
+                    ],
+                    'expectIPs': ['geoip:cn'],
+                    'skipFallback': True,
+                    'tag': 'domestic-dns',
+                },
+            ],
             'tag': 'dns-module',
         },
         'inbounds': [
@@ -103,6 +144,11 @@ def generate_full_json_config(outbound_proxies, remark_name):
                 'port': 10808,
                 'protocol': 'socks',
                 'settings': {'auth': 'noauth', 'udp': True, 'userLevel': 8},
+                'sniffing': {
+                    'destOverride': ['http', 'tls'],
+                    'enabled': True,
+                    'routeOnly': False,
+                },
                 'tag': 'socks',
             }
         ],
@@ -122,9 +168,13 @@ def generate_full_json_config(outbound_proxies, remark_name):
                     'handshake': 4,
                     'uplinkOnly': 1,
                 }
-            }
+            },
+            'system': {
+                'statsOutboundDownlink': True,
+                'statsOutboundUplink': True,
+            },
         },
-        'remarks': remark_name,
+        'remarks': 'javidsub Intelligent Selection',
         'routing': {
             'balancers': [
                 {
@@ -133,22 +183,76 @@ def generate_full_json_config(outbound_proxies, remark_name):
                     'tag': 'proxy-round',
                 }
             ],
+            'domainStrategy': 'AsIs',
             'rules': [
+                {
+                    'network': 'udp',
+                    'outboundTag': 'block',
+                    'port': '443',
+                    'type': 'field',
+                },
+                {
+                    'balancerTag': 'proxy-round',
+                    'domain': ['geosite:google'],
+                    'type': 'field',
+                },
+                {
+                    'ip': ['geoip:private'],
+                    'outboundTag': 'direct',
+                    'type': 'field',
+                },
+                {
+                    'domain': ['geosite:private'],
+                    'outboundTag': 'direct',
+                    'type': 'field',
+                },
+                {
+                    'ip': ['geoip:cn'],
+                    'outboundTag': 'direct',
+                    'type': 'field',
+                },
+                {
+                    'domain': ['geosite:cn'],
+                    'outboundTag': 'direct',
+                    'type': 'field',
+                },
+                {
+                    'inboundTag': ['domestic-dns'],
+                    'outboundTag': 'direct',
+                    'type': 'field',
+                },
+                {
+                    'balancerTag': 'proxy-round',
+                    'inboundTag': ['dns-module'],
+                    'type': 'field',
+                },
                 {
                     'balancerTag': 'proxy-round',
                     'network': 'tcp,udp',
                     'type': 'field',
-                }
+                },
             ],
         },
+        'stats': {},
     }
 
+    # افزودن تمام پروکسی‌ها به خروجی‌ها
     base_config['outbounds'].extend(outbound_proxies)
+
+    # افزودن Direct و Block در انتهای لیست Outbounds
     base_config['outbounds'].append(
-        {'protocol': 'freedom', 'settings': {'domainStrategy': 'UseIP'}, 'tag': 'direct'}
+        {
+            'protocol': 'freedom',
+            'settings': {'domainStrategy': 'UseIP'},
+            'tag': 'direct',
+        }
     )
     base_config['outbounds'].append(
-        {'protocol': 'blackhole', 'settings': {'response': {'type': 'http'}}, 'tag': 'block'}
+        {
+            'protocol': 'blackhole',
+            'settings': {'response': {'type': 'http'}},
+            'tag': 'block',
+        }
     )
 
     return base_config
@@ -159,10 +263,12 @@ def main():
     urls = [u.strip() for u in raw_urls.splitlines() if u.strip()]
 
     if not urls:
-        print('No URLs found!')
+        print('No URLs found in SUB_URLS secret!')
         return
 
     all_raw_configs = []
+
+    # ۱. دریافت تمام لینک‌ها
     for url in urls:
         lines = fetch_and_decode(url)
         for line in lines:
@@ -170,40 +276,42 @@ def main():
             if line.startswith('vless://') and line not in all_raw_configs:
                 all_raw_configs.append(line)
 
-    all_outbounds = []
+    print(f'Total valid VLESS configs found: {len(all_raw_configs)}')
+
+    # ۲. ذخیره فایل خام متنی javidsub
+    with open('javidsub', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(all_raw_configs))
+
+    # ۳. ذخیره بسته‌های ۱۰۰۰ تایی
+    chunk_size = 1000
+    total_chunks = math.ceil(len(all_raw_configs) / chunk_size)
+    os.makedirs('json_configs', exist_ok=True)
+
+    for i in range(total_chunks):
+        chunk = all_raw_configs[i * chunk_size : (i + 1) * chunk_size]
+        json_data = {
+            'chunk_index': i + 1,
+            'total_configs': len(chunk),
+            'configs': chunk,
+        }
+        with open(
+            f'json_configs/configs_{i + 1}.json', 'w', encoding='utf-8'
+        ) as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=2)
+
+    # ۴. تبدیل لینک‌ها به Outbound برای فایل JSON نهایی
+    parsed_outbounds = []
     for idx, link in enumerate(all_raw_configs, start=1):
         outbound = parse_vless_to_outbound(link, tag_name=f'proxy-{idx}')
         if outbound:
-            all_outbounds.append(outbound)
+            parsed_outbounds.append(outbound)
 
-    # تقسیم به بسته‌های ۱,۰۰۰ تایی
-    chunk_size = 1000
-    total_chunks = math.ceil(len(all_outbounds) / chunk_size)
+    # ۵. ساخت ساختار کامل JSON
+    final_json_structure = generate_full_json_config(parsed_outbounds)
 
-    json_strings_list = []
-
-    # ساخت ۵0 فایل JSON کامپکت شده (یا به تعداد چانک‌ها)
-    for i in range(total_chunks):
-        chunk = all_outbounds[i * chunk_size : (i + 1) * chunk_size]
-        json_obj = generate_full_json_config(chunk, remark_name=f'javidsub Pack {i + 1}')
-
-        # تبدیل به رشته JSON فشرده (بدون Space اضافی)
-        compact_json = json.dumps(json_obj, ensure_ascii=False, separators=(',', ':'))
-        json_strings_list.append(compact_json)
-
-    # چسباندن همه JSONها با خط جدید
-    combined_json_content = '\n'.join(json_strings_list)
-
-    # کدگذاری Base64 کل خروجی
-    encoded_sub = base64.b64encode(combined_json_content.encode('utf-8')).decode('utf-8')
-
-    # ذخیره در final_sub.txt
+    # ذخیره مستقیم JSON درون final_sub.txt
     with open('final_sub.txt', 'w', encoding='utf-8') as f:
-        f.write(encoded_sub)
-
-    print(
-        f'Successfully packed {len(json_strings_list)} JSON configs into single Base64 sub!'
-    )
+        json.dump(final_json_structure, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == '__main__':
