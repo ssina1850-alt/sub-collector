@@ -95,7 +95,7 @@
         "vnext": [
           {
             "address": "zr-wasm.sina12-55e.workers.dev",
-            "port": 443,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -112,7 +112,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/sC5mGZmE0QM8?ed=2048"
+          "path": "/CQUPwSRsvzCn?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -137,7 +137,7 @@
         "vnext": [
           {
             "address": "zr-wasm.sina12-55e.workers.dev",
-            "port": 8880,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -154,7 +154,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/Vv0bKWjyjeG3?ed=2560"
+          "path": "/X7TZs0VPXyHC?ed=2560"
         }
       },
       "tag": "proxy-2"
@@ -169,7 +169,7 @@
         "vnext": [
           {
             "address": "creativecommons.org",
-            "port": 2087,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -186,7 +186,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/tVXcbYfCgIbg?ed=2048"
+          "path": "/TxXnzqmouwmj?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -228,7 +228,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/PkMOYVVIx6H4?ed=2560"
+          "path": "/k0fDHQnmdilO?ed=2560"
         }
       },
       "tag": "proxy-4"
@@ -243,7 +243,7 @@
         "vnext": [
           {
             "address": "www.speedtest.net",
-            "port": 8443,
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
@@ -260,7 +260,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/4DfdtoOSuL89?ed=2048"
+          "path": "/vKO8jbccXFV3?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -285,7 +285,7 @@
         "vnext": [
           {
             "address": "www.speedtest.net",
-            "port": 2052,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -302,7 +302,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/0ROEvbAFOkvd?ed=2560"
+          "path": "/Q2Qr4s1zNohj?ed=2560"
         }
       },
       "tag": "proxy-6"
@@ -317,7 +317,7 @@
         "vnext": [
           {
             "address": "sky.rethinkdns.com",
-            "port": 2083,
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
@@ -334,7 +334,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/hNALjebypaNt?ed=2048"
+          "path": "/3PJxQMYWNXTK?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -359,7 +359,7 @@
         "vnext": [
           {
             "address": "sky.rethinkdns.com",
-            "port": 2082,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -376,7 +376,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/8i86tpg1mjej?ed=2560"
+          "path": "/aKN2wiuAFxhb?ed=2560"
         }
       },
       "tag": "proxy-8"
@@ -391,7 +391,7 @@
         "vnext": [
           {
             "address": "chat.openai.com",
-            "port": 2053,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -408,7 +408,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/xic0tciG0RFJ?ed=2048"
+          "path": "/f34mHXEr066U?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -433,7 +433,7 @@
         "vnext": [
           {
             "address": "chat.openai.com",
-            "port": 8080,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -450,7 +450,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/y01DaAs4lV97?ed=2560"
+          "path": "/C6cnYaJaMNRY?ed=2560"
         }
       },
       "tag": "proxy-10"
@@ -465,7 +465,7 @@
         "vnext": [
           {
             "address": "cfip.xxxxxxxx.tk",
-            "port": 2053,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -482,7 +482,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/FKw4Cr4MROAK?ed=2048"
+          "path": "/fZ8rbNe0e0PM?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -507,7 +507,7 @@
         "vnext": [
           {
             "address": "cfip.xxxxxxxx.tk",
-            "port": 2095,
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
@@ -524,7 +524,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/4G9jFNBGYhjB?ed=2560"
+          "path": "/coqvZKzYGT8x?ed=2560"
         }
       },
       "tag": "proxy-12"
@@ -539,7 +539,7 @@
         "vnext": [
           {
             "address": "go.inmobi.com",
-            "port": 2053,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -556,7 +556,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/7tdQeZWLf5ke?ed=2048"
+          "path": "/pQ2CM0FNCFpp?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -581,7 +581,7 @@
         "vnext": [
           {
             "address": "go.inmobi.com",
-            "port": 2095,
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
@@ -598,7 +598,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/2VmN6HjbhexN?ed=2560"
+          "path": "/m7xGywgJopQv?ed=2560"
         }
       },
       "tag": "proxy-14"
@@ -613,7 +613,7 @@
         "vnext": [
           {
             "address": "singapore.com",
-            "port": 2087,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -630,7 +630,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/1cKtO58tBQut?ed=2048"
+          "path": "/8GX0kvPllzCi?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -655,7 +655,7 @@
         "vnext": [
           {
             "address": "singapore.com",
-            "port": 2082,
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
@@ -672,7 +672,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/wujvQ8FocgVu?ed=2560"
+          "path": "/HUvqfdxrhRR8?ed=2560"
         }
       },
       "tag": "proxy-16"
@@ -687,7 +687,7 @@
         "vnext": [
           {
             "address": "www.visa.com",
-            "port": 2083,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -704,7 +704,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/2yAz6tdzsznW?ed=2048"
+          "path": "/4SfvSge28VPH?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -729,7 +729,7 @@
         "vnext": [
           {
             "address": "www.visa.com",
-            "port": 2082,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -746,7 +746,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/duwmTD30TOeE?ed=2560"
+          "path": "/jps2pEHhUIr6?ed=2560"
         }
       },
       "tag": "proxy-18"
@@ -778,7 +778,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/LrK9O8WDWpU1?ed=2048"
+          "path": "/x0nLfmPMcLDJ?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -803,7 +803,7 @@
         "vnext": [
           {
             "address": "www.wto.org",
-            "port": 8880,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -820,7 +820,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/SIau9eJTdRUO?ed=2560"
+          "path": "/hUCn2WfEsZKo?ed=2560"
         }
       },
       "tag": "proxy-20"
@@ -835,7 +835,7 @@
         "vnext": [
           {
             "address": "chatgpt.com",
-            "port": 443,
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
@@ -852,7 +852,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/pJDnUXlHOnAc?ed=2048"
+          "path": "/GmvSabemWUDe?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -877,7 +877,7 @@
         "vnext": [
           {
             "address": "chatgpt.com",
-            "port": 8080,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -894,7 +894,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/FT8YvXxoogxE?ed=2560"
+          "path": "/0KLOc0Y7bgox?ed=2560"
         }
       },
       "tag": "proxy-22"
@@ -909,7 +909,7 @@
         "vnext": [
           {
             "address": "medium.com",
-            "port": 443,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -926,7 +926,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/RrmaIycbxKHV?ed=2048"
+          "path": "/hpBoTgkPjfqL?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -968,7 +968,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/3q0LyQXwq2tg?ed=2560"
+          "path": "/8Hi2A5nGtJfR?ed=2560"
         }
       },
       "tag": "proxy-24"
@@ -983,7 +983,7 @@
         "vnext": [
           {
             "address": "npmjs.com",
-            "port": 2096,
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
@@ -1000,7 +1000,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/dqrbksuuGVQH?ed=2048"
+          "path": "/VzJxmld3gfi3?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1025,7 +1025,7 @@
         "vnext": [
           {
             "address": "npmjs.com",
-            "port": 2095,
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
@@ -1042,7 +1042,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/WeEmKyBtAtmW?ed=2560"
+          "path": "/o1363EebMNSE?ed=2560"
         }
       },
       "tag": "proxy-26"
@@ -1057,7 +1057,7 @@
         "vnext": [
           {
             "address": "nodejs.org",
-            "port": 443,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -1074,7 +1074,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/49ih7w7t09zX?ed=2048"
+          "path": "/2elSj5cl6GTz?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1099,7 +1099,7 @@
         "vnext": [
           {
             "address": "nodejs.org",
-            "port": 8080,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -1116,7 +1116,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/8Eez4M7FcLfd?ed=2560"
+          "path": "/3WZJR9aOqEId?ed=2560"
         }
       },
       "tag": "proxy-28"
@@ -1131,7 +1131,7 @@
         "vnext": [
           {
             "address": "csgo.com",
-            "port": 8443,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -1148,7 +1148,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/LHl0CPwxHAU4?ed=2048"
+          "path": "/uF80cIa345b8?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1173,7 +1173,7 @@
         "vnext": [
           {
             "address": "csgo.com",
-            "port": 8080,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -1190,7 +1190,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/ftKUJf7WRfci?ed=2560"
+          "path": "/t3LObc5jlj6T?ed=2560"
         }
       },
       "tag": "proxy-30"
@@ -1205,7 +1205,7 @@
         "vnext": [
           {
             "address": "harbor.io",
-            "port": 2053,
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
@@ -1222,7 +1222,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/GbeKTjPqbgMc?ed=2048"
+          "path": "/7zEY8rdEz2gm?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1247,7 +1247,7 @@
         "vnext": [
           {
             "address": "harbor.io",
-            "port": 2052,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -1264,7 +1264,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/zOpBCJ3d4XfM?ed=2560"
+          "path": "/0QzE9lVESOwm?ed=2560"
         }
       },
       "tag": "proxy-32"
@@ -1296,7 +1296,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/bDHPzRnRIRTc?ed=2048"
+          "path": "/aalCbsSci0Kl?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1321,7 +1321,7 @@
         "vnext": [
           {
             "address": "linkerd.io",
-            "port": 8080,
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
@@ -1338,7 +1338,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/s5yt60KXWZ9j?ed=2560"
+          "path": "/OohcbF0c5GBD?ed=2560"
         }
       },
       "tag": "proxy-34"
@@ -1353,7 +1353,7 @@
         "vnext": [
           {
             "address": "fbi.gov",
-            "port": 2053,
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
@@ -1370,7 +1370,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/XWzS2lNsSfca?ed=2048"
+          "path": "/crR2vLHUgwXC?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1395,7 +1395,7 @@
         "vnext": [
           {
             "address": "fbi.gov",
-            "port": 2095,
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
@@ -1412,7 +1412,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/plbFeVNfGaOF?ed=2560"
+          "path": "/ao8FgnghwgQI?ed=2560"
         }
       },
       "tag": "proxy-36"
@@ -1444,7 +1444,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/GfvpBdyfl1hq?ed=2048"
+          "path": "/elaQA4uoE2tn?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1469,7 +1469,7 @@
         "vnext": [
           {
             "address": "zula.ir",
-            "port": 2086,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -1486,7 +1486,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/XF4ha1hFa9vT?ed=2560"
+          "path": "/nuDpW664lEaP?ed=2560"
         }
       },
       "tag": "proxy-38"
@@ -1501,7 +1501,7 @@
         "vnext": [
           {
             "address": "172.67.113.4",
-            "port": 2096,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -1518,7 +1518,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/8snvkjLcebH8?ed=2048"
+          "path": "/Jw6QdqMTqPVr?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1543,7 +1543,7 @@
         "vnext": [
           {
             "address": "172.67.113.4",
-            "port": 8080,
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
@@ -1560,7 +1560,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/eRmDOsWnsoHN?ed=2560"
+          "path": "/b7ylv5iVy1Wr?ed=2560"
         }
       },
       "tag": "proxy-40"
@@ -1592,7 +1592,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/vZXN9CC7ijJS?ed=2048"
+          "path": "/GdgK164nKyfG?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1634,7 +1634,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/wpRgosedp0ID?ed=2560"
+          "path": "/mHosPUDSiRji?ed=2560"
         }
       },
       "tag": "proxy-42"
@@ -1649,7 +1649,7 @@
         "vnext": [
           {
             "address": "198.41.208.53",
-            "port": 8443,
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
@@ -1666,7 +1666,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/3FaXb8dPbBAq?ed=2048"
+          "path": "/IBnfgnKdll12?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1708,7 +1708,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/CQTW3EOBrsON?ed=2560"
+          "path": "/x5wim9p93mhQ?ed=2560"
         }
       },
       "tag": "proxy-44"
@@ -1723,7 +1723,7 @@
         "vnext": [
           {
             "address": "198.41.209.114",
-            "port": 2053,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -1740,7 +1740,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/nmb13dIJ4bfN?ed=2048"
+          "path": "/Z0KsMTBiC2RN?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1765,7 +1765,7 @@
         "vnext": [
           {
             "address": "198.41.209.114",
-            "port": 80,
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
@@ -1782,7 +1782,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/wJnld7c9lCeE?ed=2560"
+          "path": "/0uLNYRGKQHKN?ed=2560"
         }
       },
       "tag": "proxy-46"
@@ -1797,7 +1797,7 @@
         "vnext": [
           {
             "address": "198.41.208.12",
-            "port": 8443,
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
@@ -1814,7 +1814,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/vLqMJl26cEI4?ed=2048"
+          "path": "/ICSktRgrSd2R?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1839,7 +1839,7 @@
         "vnext": [
           {
             "address": "198.41.208.12",
-            "port": 2082,
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
@@ -1856,7 +1856,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/2uA6QoeVOBNg?ed=2560"
+          "path": "/VaCmIWdZClYo?ed=2560"
         }
       },
       "tag": "proxy-48"
@@ -1888,7 +1888,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/UJU6PJOgke3g?ed=2048"
+          "path": "/EXQ895g7xKlb?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -1913,7 +1913,7 @@
         "vnext": [
           {
             "address": "104.18.72.45",
-            "port": 8880,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -1930,7 +1930,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/5Gv8HK5pqqSI?ed=2560"
+          "path": "/xzco9gS6pDp9?ed=2560"
         }
       },
       "tag": "proxy-50"
@@ -1945,7 +1945,7 @@
         "vnext": [
           {
             "address": "104.16.82.102",
-            "port": 8443,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -1962,7 +1962,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/8GRayzNuO0PS?ed=2048"
+          "path": "/RenkvdsNkk0h?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2004,7 +2004,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/A4YYTjCBucZw?ed=2560"
+          "path": "/k5AAHZu7OSDl?ed=2560"
         }
       },
       "tag": "proxy-52"
@@ -2019,7 +2019,7 @@
         "vnext": [
           {
             "address": "104.19.96.238",
-            "port": 443,
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
@@ -2036,7 +2036,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/KZOxFUX8NtCz?ed=2048"
+          "path": "/3JnJW3w7LX87?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2061,7 +2061,7 @@
         "vnext": [
           {
             "address": "104.19.96.238",
-            "port": 8080,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2078,7 +2078,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/SqUKeb9yz03I?ed=2560"
+          "path": "/e0me7BiR0hJR?ed=2560"
         }
       },
       "tag": "proxy-54"
@@ -2093,7 +2093,7 @@
         "vnext": [
           {
             "address": "104.19.118.129",
-            "port": 2096,
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
@@ -2110,7 +2110,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/dynucqncn15Z?ed=2048"
+          "path": "/u8RURIP96A1Y?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2135,7 +2135,7 @@
         "vnext": [
           {
             "address": "104.19.118.129",
-            "port": 2095,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -2152,7 +2152,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/LwkihPh8BO5W?ed=2560"
+          "path": "/oVBgCwi5N0TI?ed=2560"
         }
       },
       "tag": "proxy-56"
@@ -2167,7 +2167,7 @@
         "vnext": [
           {
             "address": "172.64.85.226",
-            "port": 2053,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -2184,7 +2184,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/zVDzpEK786In?ed=2048"
+          "path": "/gu3jY4Ub7fCP?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2209,7 +2209,7 @@
         "vnext": [
           {
             "address": "172.64.85.226",
-            "port": 8080,
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
@@ -2226,7 +2226,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/s830lqBqb6pp?ed=2560"
+          "path": "/Q7ZgZ2kzNPE6?ed=2560"
         }
       },
       "tag": "proxy-58"
@@ -2258,7 +2258,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/hYzEsnbkQPB4?ed=2048"
+          "path": "/4BZWQPeAOlU0?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2283,7 +2283,7 @@
         "vnext": [
           {
             "address": "172.67.113.4",
-            "port": 2052,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2300,7 +2300,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/DQfoRhn0jXTj?ed=2560"
+          "path": "/xJh9Bp9Rf3wT?ed=2560"
         }
       },
       "tag": "proxy-60"
@@ -2315,7 +2315,7 @@
         "vnext": [
           {
             "address": "198.41.208.141",
-            "port": 2053,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -2332,7 +2332,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/spIotXlEZEtR?ed=2048"
+          "path": "/0rRmdm1zpD19?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2357,7 +2357,7 @@
         "vnext": [
           {
             "address": "198.41.208.141",
-            "port": 2052,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -2374,7 +2374,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/Au7da7jZnGCh?ed=2560"
+          "path": "/tW0pCPd6V8lM?ed=2560"
         }
       },
       "tag": "proxy-62"
@@ -2389,7 +2389,7 @@
         "vnext": [
           {
             "address": "198.41.208.53",
-            "port": 443,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -2406,7 +2406,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/AhGSgwcCkQ61?ed=2048"
+          "path": "/iXhx4ZztvatP?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2431,7 +2431,7 @@
         "vnext": [
           {
             "address": "198.41.208.53",
-            "port": 2052,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2448,7 +2448,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/i8hk1E69Qbme?ed=2560"
+          "path": "/zDlqHLbZgUR2?ed=2560"
         }
       },
       "tag": "proxy-64"
@@ -2463,7 +2463,7 @@
         "vnext": [
           {
             "address": "198.41.209.114",
-            "port": 2053,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -2480,7 +2480,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/fjE9QFj0JgYC?ed=2048"
+          "path": "/QcPe1Qf5Y7E5?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2522,7 +2522,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/NDDTHTQzUblz?ed=2560"
+          "path": "/0wwgMPGjT6NO?ed=2560"
         }
       },
       "tag": "proxy-66"
@@ -2537,7 +2537,7 @@
         "vnext": [
           {
             "address": "198.41.208.12",
-            "port": 2087,
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
@@ -2554,7 +2554,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/judxX5bn5KTI?ed=2048"
+          "path": "/aLjYsGZNJqL9?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2579,7 +2579,7 @@
         "vnext": [
           {
             "address": "198.41.208.12",
-            "port": 2082,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
@@ -2596,7 +2596,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/0byMs83SoRFJ?ed=2560"
+          "path": "/ViuASiAjGtC8?ed=2560"
         }
       },
       "tag": "proxy-68"
@@ -2611,7 +2611,7 @@
         "vnext": [
           {
             "address": "2606:4700:54:de46:27c9:d855:656b:5bfe",
-            "port": 2053,
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
@@ -2628,7 +2628,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/QMX5N26IT0Ev?ed=2048"
+          "path": "/YoZjjIkaK568?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2653,7 +2653,7 @@
         "vnext": [
           {
             "address": "2606:4700:54:de46:27c9:d855:656b:5bfe",
-            "port": 8880,
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
@@ -2670,7 +2670,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/g6uJjXbnPXhs?ed=2560"
+          "path": "/0CMbco12VUaO?ed=2560"
         }
       },
       "tag": "proxy-70"
@@ -2702,7 +2702,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/OI4M8x9C5ca3?ed=2048"
+          "path": "/ZIqDoTTgU9sU?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2727,7 +2727,7 @@
         "vnext": [
           {
             "address": "2606:4700:3022:3360:a681:421f:3a54:d048",
-            "port": 2086,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2744,7 +2744,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/DcWeKtUIS6dI?ed=2560"
+          "path": "/gVALfykwHU5I?ed=2560"
         }
       },
       "tag": "proxy-72"
@@ -2759,7 +2759,7 @@
         "vnext": [
           {
             "address": "2606:4700:3022:9d3e:819b:f1d4:6f24:bdff",
-            "port": 8443,
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
@@ -2776,7 +2776,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/2Lhi3ZPGRF3I?ed=2048"
+          "path": "/TjIeXEBsL8rL?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2801,7 +2801,7 @@
         "vnext": [
           {
             "address": "2606:4700:3022:9d3e:819b:f1d4:6f24:bdff",
-            "port": 2095,
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
@@ -2818,7 +2818,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/Soa0Nhgijeeh?ed=2560"
+          "path": "/zMl8R5aEapuK?ed=2560"
         }
       },
       "tag": "proxy-74"
@@ -2833,7 +2833,7 @@
         "vnext": [
           {
             "address": "2606:4700:54:7911:6fc2:84ac:5cf0:2090",
-            "port": 2083,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -2850,7 +2850,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/jj0rlnvZlIVZ?ed=2048"
+          "path": "/aVNlJ6iCV3Ao?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2875,7 +2875,7 @@
         "vnext": [
           {
             "address": "2606:4700:54:7911:6fc2:84ac:5cf0:2090",
-            "port": 8080,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2892,7 +2892,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/4kfaL7x8azc6?ed=2560"
+          "path": "/pC66fY2DIUQI?ed=2560"
         }
       },
       "tag": "proxy-76"
@@ -2907,7 +2907,7 @@
         "vnext": [
           {
             "address": "2606:4700:8d74:5139:59a6:ad1d:e10f:54fc",
-            "port": 2087,
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
@@ -2924,7 +2924,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/HAyXRtULrrKm?ed=2048"
+          "path": "/EoetxiDWODGE?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
@@ -2949,7 +2949,7 @@
         "vnext": [
           {
             "address": "2606:4700:8d74:5139:59a6:ad1d:e10f:54fc",
-            "port": 2095,
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -2966,7 +2966,7 @@
           "headers": {
             "Host": "zr-wasm.sina12-55e.workers.dev"
           },
-          "path": "/nb4M3S2XXjCH?ed=2560"
+          "path": "/kY9bhwjdOIWD?ed=2560"
         }
       },
       "tag": "proxy-78"
